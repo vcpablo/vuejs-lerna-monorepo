@@ -1,0 +1,35 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "description": "A VueJS + Lerna Monorepo Project",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "lerna bootstrap",
+    "admin": "cd ./modules/admin && npm run serve",
+    "admin:build": "cd ./modules/admin && npm run build",
+    "admin:test": "cd ./modules/admin && npm run test",
+    "test": "lerna exec -- npm run test",
+    "lint": "lerna exec -- npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vcpablo/vuejs-lerna-monorepo-sample.git"
+  },
+  "keywords": [
+    "vuejs",
+    "monorepo",
+    "lerna"
+  ],
+  "author": "Pablo Veiga <vcpablo@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vcpablo/vuejs-lerna-monorepo-sample/issues"
+  },
+  "homepage": "https://github.com/vcpablo/vuejs-lerna-monorepo-sample#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.26.0",
+    "eslint-plugin-vue": "^7.9.0",
+    "lerna": "^4.0.0"
+  }
+}
