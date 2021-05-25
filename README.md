@@ -1,5 +1,7 @@
 # VueJS + Lerna monorepo project sample
 
+This is a repository that support the content of the article: [VueJS - Building a basic Monorepo project](https://dev.to/vcpablo/vuejs-building-a-monorepo-using-lerna-1h1c)
+
 ## Project setup (installs all root dependencies and all dependencies of all inner modules)
 ```
 npm install
